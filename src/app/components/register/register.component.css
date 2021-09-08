@@ -1,0 +1,59 @@
+#form{
+    display: flex;
+    flex-flow: row;
+    width: 70%;
+    margin: 0px auto;
+}
+
+
+#form h3{
+    font-family: fantasy;
+}
+
+#secondBlock {
+    margin: 0px auto;
+}
+
+
+
+#secondBlock form, #register{
+    background-color: white;
+    width: 100mm;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+#secondBlock form{
+    padding: 15px 0px;
+}
+
+#secondBlock form input, #secondBlock form button{
+    width: 80%;
+    height: 10mm;
+    margin: 7px;
+    opacity: 0.8;
+}
+
+#register{
+    height: 15mm;
+}
+
+#register p, #register a{
+    line-height: 15mm;
+}
+
+#loading {
+    width: 100mm;
+    text-align: center;
+}
+
+#loading img{
+    width: 100px;
+    height: 100px;
+}
+
+.error {
+    color: red;
+}
+

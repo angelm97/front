@@ -1,0 +1,72 @@
+<div id="form">
+  
+  <div id="secondBlock">
+    <form [formGroup]="form" (submit)="submit()"> 
+      <h3>RedSocial</h3>
+      <input formControlName="email" type="email" placeholder="Usuario o orreo electronico">
+
+      <p *ngIf="uemail" class="error">Ya existe una cuenta creada con este email</p>
+
+      <input formControlName="name" type="text" placeholder="Nombre">
+
+      <input formControlName="last_name" type="text" placeholder="Apellido">
+
+      <input formControlName="user_name" type="text" placeholder="Nombre de usuario">
+
+      <p *ngIf="uname" class="error">El nombre de usuario no esta disponible</p>
+
+      <input formControlName="password" type="password" placeholder="Contraseña">
+
+      <button type="submit" class="btn btn-primary">Registrarte</button>
+
+      <div *ngIf="error" id="error">
+        <p>El nombre de usuario que has introducido o la contraseña no es correcta</p>
+      </div>
+    </form>
+
+    <div *ngIf="loading" id="loading">
+      <img src="/assets/img/loading.gif" alt="">
+    </div>
+
+    <div id="register">
+      <p>¿Tienes una cuenta? <a routerLink="/login">Entrar </a></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<form [formGroup]="form" (submit)="submit()"> 
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input formControlName="name" type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Lsst Name</label>
+        <input formControlName="last_name" type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Enter Last Name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">UserName</label>
+        <input formControlName="user_name" type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Enter UserName">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input formControlName="email" type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input formControlName="password" type="password" class="form-control"  placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password Confirmation</label>
+        <input formControlName="password_confirmation" type="password" class="form-control" placeholder="Password Confitmation">
+      </div>
+      <a routerLink="/login">Ya tienes una cuenta ?</a>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

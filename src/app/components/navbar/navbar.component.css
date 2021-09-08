@@ -1,0 +1,152 @@
+#navbar * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  #navbar {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    height: 15mm;
+    min-width: 100%;
+    padding: 0px 100px;
+    border-bottom: 1px solid rgb(202, 198, 198);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 11;
+    right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid rgb(209, 209, 209);
+    border-right: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(209, 209, 209);
+  }
+  
+  #dropdown-4 {
+    margin-top: 10px;
+    margin-right: 20px;
+    min-width: 80mm;
+  }
+  
+  #navbar h1 {
+    font-size: 35px;
+    line-height: 15mm;
+  }
+  
+  #search {
+    line-height: 15mm;
+    padding: 0px 5px;
+  }
+  
+  #search input[type="text"] {
+    height: 8mm;
+    width: 100mm;
+    border-radius: 5px;
+    opacity: 0.8;
+  }
+  
+  #search svg {
+      border: 2px solid gray;
+      border-radius: 100px !important;
+      height: 8mm;
+      width: 15mm;
+      border-radius: 5px;
+      opacity: 0.8;
+      margin: 5px;
+      margin-bottom: 8px;
+      padding: 5px;
+      cursor: pointer;
+      padding-bottom: 5px;
+  
+    }
+  
+    #search svg:hover {
+      background-color: gray;
+    }
+  
+  .icons {
+    display: flex;
+    flex-flow: row;
+    line-height: 15mm;
+    padding: 0px 15px;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .option {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center space-between;
+    height: 100%;
+    width: 100%;
+    margin-right: 5px !important;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    height: 70%;
+  }
+  
+  .on {
+    display: flex !important;
+  }
+  
+  .off {
+    display:none;
+  }
+  
+  /* ajustes */
+  
+  @media only screen and (max-width: 1114px) {
+    #search {
+      display: none;
+    }
+  
+    #navbar {
+      display: flex;
+      flex-flow: row;
+    }
+  }
+  
+  @media only screen and (max-width: 666px) {
+    #search {
+      display: none;
+    }
+  
+    #navbar {
+      display: flex;
+      flex-flow: column;
+      height: auto;
+      text-align: center;
+      margin: 0px;
+        padding: 0px;
+    }
+  
+    #navbar h1 {
+      font-size: 25px;
+    }
+  
+    .icons{
+        padding: 0px 25px !important;
+        
+    }
+  
+    .option{
+        margin: 0px auto;
+        text-align: center !important;
+    }
+  }
+  

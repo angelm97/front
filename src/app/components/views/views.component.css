@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    display: flex;
+    flex-flow: row;
+}
+
+/* Videos box */
+
+.firstbox{
+    flex-basis: 60%;
+    
+}
+
+.most_like{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(208, 208, 208) solid;
+    border-radius: 5px;
+    padding: 10px 0px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.userliked{
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.most_like img{
+    border-radius: 100px;
+    width: 55px;
+    height: 55px;  
+}
+
+.most_like p{
+    font-size: 13px;
+}
+
+.video{
+    display: flex;
+    flex-flow: column ;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(208, 208, 208) solid;
+    border-radius: 5px;
+    padding: 10px 0px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.user_info_video{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.userliked_info{
+    display: flex;
+    flex-flow: row ;
+    width: 100%;
+    align-items: center;
+}
+
+.userliked_info img{
+    align-items: center;
+    border-radius: 100px;
+    width: 55px;
+    height: 55px;  
+}
+
+.userliked_info p{
+    margin-left: 15px;
+    font-weight: bold;
+
+}
+
+.views_video{
+    margin-right: auto;
+    order: 2;
+}
+
+.video_play video{
+    width: 100%;
+    height: 355px; 
+}
+
+.info_video{
+    margin: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon_click{
+    cursor: pointer;
+}
+
+.icons{
+    justify-content: center;
+    text-align: center;
+}
+
+.info_video p{
+    margin: 0px 10px;
+    display: flex;
+    flex-flow: row;
+}
+/* Fin videos box */
+
+/* perfil users */
+
+.secondbox{
+    flex-basis: 40%;
+    position: fixed;
+    z-index: 0;
+    right: 0;
+    width: 40%;
+    margin-top: 15px;
+}
+
+.info_perfil{
+    width: 50%;
+    height: 50px;
+    
+}
+
+.name_perfil{
+    margin-left: 25px;
+    margin-top: 6px;
+}
+
+.content_perfil{
+    display: flex;
+    flex-flow: row;
+}
+
+.content_perfil img{
+    border-radius: 100px;
+    width: 65px;
+    height: 65px;
+}
+
+.segerencias{
+    margin-top: 45px;
+}
+
+.content_perfil_segerencias img{
+    border-radius: 100px;
+    width: 45;
+    height: 45px;
+}
+
+.content_perfil_segerencias{
+    display: flex;
+    flex-flow: row;
+    margin: 10px;
+}
+
+.content_perfil_segerencias p{
+    font-size: 10px;
+}
+
+.name_perfil_segerencias{
+    margin-left:15px;
+    margin-top: 4px;
+}
+
+.detail_perfil{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 50%;
+    text-align: center;
+    margin-left: 55px;
+    margin-top: 25px;
+}
+
+.detail_perfil .button{
+    margin: 0px auto;
+}
+
+.detail_perfil .button button{
+    border-radius: 5px;     
+    padding:2px;
+}
+
+footer{
+    margin-top: 35px;
+    color: gray;
+}
+
+/* Fin perfil users */
